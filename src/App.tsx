@@ -40,11 +40,11 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="p-5">
       {loading && <div>Carregando...</div>}
       {!loading && movies.length > 0 && (
         <>
-          <p>Total de filmes em exibição: {movies.length}</p>
+          <p className="mb-4">Total de filmes em exibição: {movies.length}</p>
           <div className="grid grid-cols-6 gap-3">
             {movies.map((item, index) => (
               <div key={index}>
